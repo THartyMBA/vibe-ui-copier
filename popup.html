@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>UI Replica</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #3e8e41;
+    }
+    #status {
+        margin-top: 10px;
+        text-align: center;
+        font-style: italic;
+        display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="downloadButton" aria-label="Download UI Replica">Download UI Replica</button>
+  <div id="status">Processing...</div>
+  <script src="popup.js"></script>
+</body>
+</html>
