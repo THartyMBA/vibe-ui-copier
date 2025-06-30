@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Webpage UI Replica",
+  "version": "1.0",
+  "description": "Captures the HTML, CSS, and JavaScript of a webpage and packages it into a downloadable zip file.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "action": {
+    "default_title": "Download Webpage UI"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
