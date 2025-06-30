@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+}
+
+#status {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#status.success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+#status.error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* CSS Variables for alert colors */
+:root {
+  --success-bg: #d4edda;
+  --success-border: #c3e6cb;
+  --error-bg: #f8d7da;
+  --error-border: #f5c6cb;
+}
+
+#status.success {
+  background-color: var(--success-bg);
+  border-color: var(--success-border);
+}
+
+#status.error {
+  background-color: var(--error-bg);
+  border-color: var(--error-border);
+}
+
+/* General Styling */
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
